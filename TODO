@@ -1,0 +1,7 @@
+Make possible to use arbitratry printing functions, not just printf's %.
+
+Make possible to wrap vararg functions.
+
+Is it possible to use the declaration directly in the wrapper definition?
+
+Make possible writing of output to file.

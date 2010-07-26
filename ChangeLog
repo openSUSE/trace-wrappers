@@ -1,0 +1,8 @@
+2010-07-26  Stanislav Brabec  <sbrabec@suse.cz>
+
+	* wrap.h: Code rewritten from scratch. First release.
+
+2003-03-29  Stanislav Brabec  <sbrabec@suse.cz>
+
+	* getenv_wrapper.c: Simple getenv() wrapper based on Rock Linux
+	Wrapper.

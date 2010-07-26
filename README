@@ -1,0 +1,16 @@
+trace-wrappers is a set of minimalistic dynamic library wrappers that
+allow to wrap dynamic library calls and print particular library calls.
+
+It writes all wrapped function calls to stderr.
+
+Usage: wrap-{wrapper name} executable [arguments of the executable]
+
+Example: wrap-getenv ls /
+WRAP: getenv(QUOTING_STYLE) = (null)
+WRAP: getenv(LS_BLOCK_SIZE) = (null)
+WRAP: getenv(BLOCK_SIZE) = (null)
+WRAP: getenv(BLOCKSIZE) = (null)
+WRAP: getenv(POSIXLY_CORRECT) = (null)
+WRAP: getenv(BLOCK_SIZE) = (null)
+WRAP: getenv(COLUMNS) = (null)
+WRAP: getenv(TABSIZE) = (null)
