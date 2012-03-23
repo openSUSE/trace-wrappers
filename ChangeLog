@@ -1,3 +1,8 @@
+2012-03-23  Stanislav Brabec  <sbrabec@oct>
+
+	* Makefile.am, configure.ac: Link wrappers explicitly with -ldl.
+	Version 0.2.
+
 2010-07-26  Stanislav Brabec  <sbrabec@suse.cz>
 
 	* wrap.h: Code rewritten from scratch. First release.

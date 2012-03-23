@@ -13,7 +13,11 @@ $(bin_SCRIPTS): Makefile.am
 
 DISTCLEANFILES = $(bin_SCRIPTS)
 
+wrap_alloc_la_LIBADD = -ldl
+wrap_getenv_la_LIBADD = -ldl
 wrap_alloc_la_LDFLAGS = -avoid-version -module -no-undefined
 wrap_getenv_la_LDFLAGS = -avoid-version -module -no-undefined
 
 EXTRA_DIST = wrap.h
+
+ACLOCAL_AMFLAGS = -I m4
