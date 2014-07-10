@@ -22,3 +22,4 @@ m4
 *.lo
 wrap-alloc
 wrap-getenv
+wrap-gettext

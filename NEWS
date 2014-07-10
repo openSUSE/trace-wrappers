@@ -1,0 +1,9 @@
+Version 0.3
+
+* Support for wrapping gettext.
+* Incompatible change: Encloses strings in quotes.
+
+
+Version 0.2
+
+* Fix linking with -ldl.
