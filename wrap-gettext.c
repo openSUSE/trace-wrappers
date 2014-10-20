@@ -20,13 +20,14 @@ or obtained by writing to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-#include "wrap.h"
+#include "dlwrap.h"
+#include "printf.h"
 #include <locale.h>
 
 #define int_category_decl		int
-#define	int_category_format		"%s"
+#define	int_category_printf		"%s"
 
-const char *int_category_func (int category)
+const char *int_category_printfunc (int category)
 {
 	static char int_category_buffer[64];
 
@@ -64,14 +65,14 @@ const char *int_category_func (int category)
 	}
 }
 
-install_wrap_on_end_3 (char_pointer, dcgettext, constant_char_pointer, constant_char_pointer, int_category);
-install_wrap_on_end_5 (char_pointer, dcngettext, constant_char_pointer, constant_char_pointer, constant_char_pointer, unsigned_long_int, int_category);
-install_wrap_on_end_1 (char_pointer, textdomain, constant_char_pointer);
-install_wrap_on_end_2 (char_pointer, bindtextdomain, constant_char_pointer, constant_char_pointer);
-install_wrap_on_end_2 (char_pointer, bind_textdomain_codeset, constant_char_pointer, constant_char_pointer);
+dlwrap_install_3 (char_pointer, dcgettext, constant_char_pointer, constant_char_pointer, int_category);
+dlwrap_install_5 (char_pointer, dcngettext, constant_char_pointer, constant_char_pointer, constant_char_pointer, unsigned_long_int, int_category);
+dlwrap_install_1 (char_pointer, textdomain, constant_char_pointer);
+dlwrap_install_2 (char_pointer, bindtextdomain, constant_char_pointer, constant_char_pointer);
+dlwrap_install_2 (char_pointer, bind_textdomain_codeset, constant_char_pointer, constant_char_pointer);
 
 /* These are probably useless, as they are defined as macros */
-install_wrap_on_end_1 (char_pointer, gettext, constant_char_pointer);
-install_wrap_on_end_2 (char_pointer, dgettext, constant_char_pointer, constant_char_pointer);
-install_wrap_on_end_3 (char_pointer, ngettext, constant_char_pointer, constant_char_pointer, unsigned_long_int);
-install_wrap_on_end_4 (char_pointer, dngettext, constant_char_pointer, constant_char_pointer, constant_char_pointer, unsigned_long_int);
+dlwrap_install_1 (char_pointer, gettext, constant_char_pointer);
+dlwrap_install_2 (char_pointer, dgettext, constant_char_pointer, constant_char_pointer);
+dlwrap_install_3 (char_pointer, ngettext, constant_char_pointer, constant_char_pointer, unsigned_long_int);
+dlwrap_install_4 (char_pointer, dngettext, constant_char_pointer, constant_char_pointer, constant_char_pointer, unsigned_long_int);

@@ -20,6 +20,7 @@ or obtained by writing to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-#include "wrap.h"
+#include "dlwrap.h"
+#include "printf.h"
 
-install_wrap_on_end_1 (char_pointer, getenv, constant_char_pointer);
+dlwrap_install_1 (char_pointer, getenv, constant_char_pointer);

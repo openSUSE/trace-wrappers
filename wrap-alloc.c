@@ -20,8 +20,9 @@ or obtained by writing to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-#include "wrap.h"
+#include "dlwrap.h"
+#include "printf.h"
 
-install_wrap_on_end_1 (void_pointer, malloc, size_t);
-install_wrap_on_end_1_voidreturn (free, void_pointer);
-install_wrap_on_end_2 (void_pointer, realloc, void_pointer, size_t);
+dlwrap_install_1 (void_pointer, malloc, size_t);
+dlwrap_install_1 (void, free, void_pointer);
+dlwrap_install_2 (void_pointer, realloc, void_pointer, size_t);

@@ -2,8 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
-AC_INIT([trace-wrappers], [0.3], [Stanislav Brabec <sbrabec@suse.cz>])
-AC_CONFIG_SRCDIR([wrap.h])
+AC_INIT([trace-wrappers], [0.4], [Stanislav Brabec <sbrabec@suse.cz>])
+AC_CONFIG_SRCDIR([dlwrap.h])
 AC_CONFIG_MACRO_DIR([m4])
 AM_DISABLE_STATIC
 AM_INIT_AUTOMAKE([-Wall dist-bzip2])
