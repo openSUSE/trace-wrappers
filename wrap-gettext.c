@@ -20,8 +20,8 @@ or obtained by writing to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-#include "dlwrap.h"
-#include "printf.h"
+#include <dlwrap/dlwrap.h>
+#include <dlwrap/printf.h>
 #include <locale.h>
 
 #define int_category_decl		int

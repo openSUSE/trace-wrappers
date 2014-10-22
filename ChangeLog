@@ -1,10 +1,14 @@
-2014-10-20  Stanislav Brabec  <sbrabec@oct.suse.cz>
+2014-10-22  Stanislav Brabec  <sbrabec@suse.cz>
+
+	* dlwrap.h, printf.h: Split headers to a separate package.
+
+2014-10-20  Stanislav Brabec  <sbrabec@suse.cz>
 
 	* dlwrap.h, printf.h: New wrapper implementation, replaces wrap.h.
 	* *.c, Makefile.am: Convert to dlwrap.
 	* configure.ac: Version 0.4.
 
-2014-07-10  Stanislav Brabec  <sbrabec@oct.suse.cz>
+2014-07-10  Stanislav Brabec  <sbrabec@suse.cz>
 
 	* wrap.h: Make possible to specify printing function, add 3 to 5
 	arguments support, add int. Enclose strings in quotes.

@@ -1,7 +1,7 @@
 /* wrap-alloc.c -- allocation functions wrapper
 
-   Copyright (C) Novell, Inc.
-   Written by Stanislav Brabec, 2010
+   Copyright (C) SUSE Linux
+   Written by Stanislav Brabec, 2010-2014
 
 trace-wrappers is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
@@ -20,8 +20,8 @@ or obtained by writing to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 */
 
-#include "dlwrap.h"
-#include "printf.h"
+#include <dlwrap/dlwrap.h>
+#include <dlwrap/printf.h>
 
 dlwrap_install_1 (void_pointer, malloc, size_t);
 dlwrap_install_1 (void, free, void_pointer);

@@ -1,9 +1,3 @@
-dlwrap_HEADERS = \
-	dlwrap.h \
-	printf.h
-
-dlwrapdir = $(includedir)/dlwrap
-
 pkglib_LTLIBRARIES = \
 	wrap-alloc.la \
 	wrap-getenv.la \

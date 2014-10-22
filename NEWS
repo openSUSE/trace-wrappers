@@ -1,3 +1,7 @@
+Version 0.4.1
+
+* Split dlwrap headers to separate package.
+
 Version 0.4
 
 * Reimplementation of the wrapper. Now the wrapper is more generic and
